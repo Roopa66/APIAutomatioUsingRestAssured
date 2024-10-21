@@ -1,0 +1,6 @@
+TestcaseNumber,TestcaseName,QueryParams,PathParam,RequestBody,ExpectedStatusCode,ExpectedUserName
+C1,getAllUsers,page=2,,,200,
+C2,getSingleUser,,2,,200,
+C3,createUser,,,"{""name"": ""morpheus"",""job"": ""leader""}",201,morpheus
+C4,updateUser,,2,"{""name"": ""morpheus"",""job"": ""zion resident""}",200,zion resident
+C5,deleteUser,,2,,204,
